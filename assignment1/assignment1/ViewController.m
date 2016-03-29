@@ -10,6 +10,7 @@
 #import "Chess.h"
 #import "Tot.h"
 #import "Vua.h"
+#import "Alert.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Task 1
     Chess *chess = [[Chess alloc] init];
     [chess move];
     [chess eat];
@@ -29,6 +30,13 @@
     [vua move];
     [vua eat];
     
+    //Task 2
+    Alert *alert = [[Alert alloc] init];
+    alert.instance = self;
+  }
+
+-(void) X {
+    NSLog(@"An duoc roi");
 }
 
 - (void)didReceiveMemoryWarning {
