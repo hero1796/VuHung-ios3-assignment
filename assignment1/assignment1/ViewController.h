@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Alert.h"
-@interface ViewController : UIViewController<Rule>
-
+@interface ViewController : UIViewController<Rule, UIAlertViewDelegate>
+@property UILabel *lbl1 ;
 @end
 

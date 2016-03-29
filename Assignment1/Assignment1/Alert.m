@@ -20,7 +20,5 @@
     }
     return self;
 }
--(void) X {
-    NSLog(@"May ha buoi");
-}
+
 @end
