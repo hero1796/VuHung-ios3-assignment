@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @protocol Rule <NSObject>
+@required
 -(void) X;
 
 @end
 
 @interface Alert : NSObject
-@property id<Rule> instance;
+@property id/* Rule */ instance;
 
 @end
