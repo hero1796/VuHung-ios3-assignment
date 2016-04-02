@@ -18,10 +18,11 @@
     [super viewDidLoad];
     UIAlertView  *message = [[UIAlertView alloc] initWithTitle:@"FBI Warning" message:@"Virus" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Button1", @"Button 2", @"Button 3", nil];
     [message show];
-    self.x =message;
+    //self.x =message;
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
         
     if(buttonIndex == 1) {

@@ -10,6 +10,6 @@
 
 @interface ViewController : UIViewController <UIAlertViewDelegate>
 
-@property id x;
+//@property id x;
 @end
 

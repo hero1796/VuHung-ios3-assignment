@@ -30,11 +30,11 @@
     // Dispose of any resources that can be recreated.
 }
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 14;
+    return 10;
 }
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
+//-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 3;
+//}
 -(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 50;
 }
@@ -45,9 +45,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = @"Hello";
-    
+//    NSString *t =
+    NSLog(@"%ld",indexPath.row);
     return cell;
 }
+
 -(void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    UITableViewCell *cell = [_tableView cellForRowAtIndexPath:indexPath];
 //    NSString *cellText =cell.textLabel.text;

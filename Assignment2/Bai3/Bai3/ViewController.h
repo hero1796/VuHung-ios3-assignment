@@ -10,6 +10,5 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property UITableView *tableView;
-
 @end
 
