@@ -23,6 +23,7 @@
 }
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.tableData count];
+    //return 40;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"Cell";
@@ -36,13 +37,18 @@
         cell.backgroundColor = [UIColor greenColor];
     }
     cell.textLabel.text = [self.tableData objectAtIndex:indexPath.row];
+    NSLog(@"%ld",indexPath.row);
     return cell;
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
 }
 -(void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%ld",indexPath.row);
+   // NSLog(@"%ld",indexPath.row);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    int selectedRow = indexPath.row;
+    NSLog(@"touch on row %d", selectedRow);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
