@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate>
-@property UITableView *tableView;
-@property NSMutableArray *tableData;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)clicked:(id)sender;
+
+
 @property NSMutableArray *pickerData1;
 @property NSMutableArray *pickerData2;
 @end
