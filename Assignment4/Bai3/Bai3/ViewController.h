@@ -10,7 +10,7 @@
 #import "ViewControllerB.h"
 @interface ViewController : UIViewController<UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnA;
-
+@property ViewController *vcA;
 @property ViewControllerB *vcB;
 @property ViewControllerB *vcB1;
 @property ViewControllerB *vcB2;

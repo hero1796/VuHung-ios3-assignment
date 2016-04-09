@@ -17,16 +17,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+//       self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+//
+//    self.viewControlerB = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"B"];
+//    
+//    self.viewControlerA= [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"A"];
 
-    self.viewControlerB = [[ViewControllerB alloc] init];
+//    UINavigationController *navigation =[[UINavigationController alloc] initWithRootViewController:self.viewControlerA];
+//    [self.window setRootViewController:navigation];
+//    self.window.backgroundColor = [UIColor redColor];
+//    [self.window makeKeyAndVisible];
     
+    self.tabBarControler = [[UITabBarController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.viewControlerB = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"B"];
     self.viewControlerA= [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"A"];
+
+    self.viewControlerB.title = @" ViewControlerB";
+     self.viewControlerA.title = @" ViewControlerA";
     
-    UINavigationController *navigation =[[UINavigationController alloc] initWithRootViewController:self.viewControlerA];
-    [self.window setRootViewController:navigation];
-    self.window.backgroundColor = [UIColor redColor];
+    UINavigationController *navigationA =[[UINavigationController alloc] initWithRootViewController:self.viewControlerA];
+    
+    UINavigationController *navigationB =[[UINavigationController alloc] initWithRootViewController:self.viewControlerB];
+
+    
+    NSArray *myTabBar= [[NSArray alloc] initWithObjects:
+                                  navigationA,
+                                  navigationB, nil];
+    self.tabBarControler.viewControllers = myTabBar;
+    [self.window addSubview:self.tabBarControler.view];
+    
+    [self.window setRootViewController:self.tabBarControler];
+    self.window.backgroundColor = [UIColor yellowColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

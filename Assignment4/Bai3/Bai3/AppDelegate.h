@@ -14,6 +14,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property ViewController *viewControlerA;
 @property ViewControllerB *viewControlerB;
-
+@property UITabBarController *tabBarControler;
 @end
 

@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //self.title = @"My Back";
-    [self.navigationController.navigationBar setBarTintColor:[UIColor yellowColor]];
+    
+    //[self.navigationController.navigationBar setBarTintColor:[UIColor yellowColor]];
     
    }
 
@@ -30,6 +30,7 @@
     self.vcB = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"B"];
      self.vcB1 = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"B"];
      self.vcB2 = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"B"];
+    
    // [self.view addSubview:self.vcB.view];
     
     
