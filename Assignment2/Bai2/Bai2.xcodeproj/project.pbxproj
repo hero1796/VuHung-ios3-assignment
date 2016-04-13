@@ -13,6 +13,7 @@
 		E94CB79B1CAD87BA008A058F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94CB7991CAD87BA008A058F /* Main.storyboard */; };
 		E94CB79D1CAD87BA008A058F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94CB79C1CAD87BA008A058F /* Assets.xcassets */; };
 		E94CB7A01CAD87BA008A058F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94CB79E1CAD87BA008A058F /* LaunchScreen.storyboard */; };
+		E960E99E1CBBCB9B00182B47 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960E99D1CBBCB9B00182B47 /* AlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E94CB79C1CAD87BA008A058F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E94CB79F1CAD87BA008A058F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E94CB7A11CAD87BA008A058F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E960E99C1CBBCB9B00182B47 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		E960E99D1CBBCB9B00182B47 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				E94CB79E1CAD87BA008A058F /* LaunchScreen.storyboard */,
 				E94CB7A11CAD87BA008A058F /* Info.plist */,
 				E94CB7901CAD87BA008A058F /* Supporting Files */,
+				E960E99C1CBBCB9B00182B47 /* AlertViewController.h */,
+				E960E99D1CBBCB9B00182B47 /* AlertViewController.m */,
 			);
 			path = Bai2;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				E94CB7981CAD87BA008A058F /* ViewController.m in Sources */,
 				E94CB7951CAD87BA008A058F /* AppDelegate.m in Sources */,
 				E94CB7921CAD87BA008A058F /* main.m in Sources */,
+				E960E99E1CBBCB9B00182B47 /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				E94CB7A61CAD87BA008A058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

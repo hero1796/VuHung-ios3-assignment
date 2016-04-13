@@ -34,13 +34,13 @@
    // [self.view addSubview:self.vcB.view];
     
     
-   //    [self presentViewController:self.vcB animated:YES completion:^ {
-   //
-   //    }];
+       [self presentViewController:self.vcB animated:YES completion:^ {
+   
+       }];
     
-    [self.navigationController pushViewController:self.vcB animated:YES];
-    [self.navigationController pushViewController:self.vcB1 animated:YES];
-    [self.navigationController pushViewController:self.vcB2 animated:YES];
+//    [self.navigationController pushViewController:self.vcB animated:YES];
+//    [self.navigationController pushViewController:self.vcB1 animated:YES];
+//    [self.navigationController pushViewController:self.vcB2 animated:YES];
 
 }
 

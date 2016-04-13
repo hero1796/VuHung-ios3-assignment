@@ -14,31 +14,92 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Mp-jc-2tH">
-                                <rect key="frame" x="64" y="20" width="209" height="30"/>
+                                <rect key="frame" x="56" y="496" width="209" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleColor" red="0.56193426719999995" green="0.75837823280000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvN-lx-c4h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ShowAlert" destination="0Mp-jc-2tH" id="YmB-BR-3lj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="290"/>
+            <point key="canvasLocation" x="156" y="187"/>
         </scene>
-        <!--View Controller-->
+        <!--Alert View Controller-->
         <scene sceneID="EdG-6c-S35">
             <objects>
-                <viewController id="ry8-Gc-Xzu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ry8-Gc-Xzu" userLabel="Alert View Controller" customClass="AlertViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TOX-qZ-6Rr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="yUC-3i-39o" userLabel="BackgroundView">
+                                <rect key="frame" x="34" y="34" width="253" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="piM-er-QXy">
+                                        <rect key="frame" x="24" y="148" width="61" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="clickedCancel:" destination="ry8-Gc-Xzu" eventType="touchUpInside" id="y2Q-HB-QXr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M78-M3-FmE">
+                                        <rect key="frame" x="183" y="148" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="clickedOk:" destination="ry8-Gc-Xzu" eventType="touchUpInside" id="o4q-B3-GjV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXO-eB-rjE">
+                                        <rect key="frame" x="82" y="36" width="88" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zYq-78-0sZ">
+                                        <rect key="frame" x="217" y="0.0" width="36" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.90096982758620692" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleShadowColor" red="0.40999461209999999" green="0.3692079741" blue="0.85867456900000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickedX:" destination="ry8-Gc-Xzu" eventType="touchUpInside" id="CT0-UN-3ef"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56193426719999995" green="0.75837823280000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="BackgroundView" destination="yUC-3i-39o" id="rsA-RU-GBt"/>
+                        <outlet property="Cancel" destination="piM-er-QXy" id="xpY-Wj-AXc"/>
+                        <outlet property="OK" destination="M78-M3-FmE" id="tkC-Do-EzM"/>
+                        <outlet property="Warning" destination="yXO-eB-rjE" id="FW4-rT-qvY"/>
+                        <outlet property="X" destination="zYq-78-0sZ" id="lgb-7g-qLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTo-Tz-Sbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240" y="120"/>
+            <point key="canvasLocation" x="357" y="114"/>
         </scene>
     </scenes>
 </document>

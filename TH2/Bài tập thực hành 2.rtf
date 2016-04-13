@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19600\viewh12520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 B\'e0i t\uc0\u7853 p th\u7921 c h\'e0nh 2.\
+M\uc0\u7909 c ti\'eau: NSDictionary, NSMutableDictionary, NSArray, NSMutableArray, Collection View Custom Cell, TableView Custom Cell, 4 ph\u432 \u417 ng ph\'e1p chuy\u7875 n view.\
+\
+A. Cho 1 string RSS d\uc0\u7841 ng JSON <Xem trong file B\'e0i t\u7853 p th\u7921 c h\'e0nh 2 - Data 1>\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 1. Chuy\uc0\u7875 n string tr\'ean v\u7873  d\u7841 ng NSDictionary.\
+2. S\uc0\u7917  d\u7909 ng v\'f2ng for, l\u7879 nh NSLog \u273 \u7875  in ra to\'e0n b\u7897  data c\u7911 a dictionary v\u7915 a \u273 \u432 \u7907 c chuy\u7875 n v\u7873 .\
+3 (*). Do mong mu\uc0\u7889 n thay \u273 \u7893 i data, n\'ean c\u7847 n ph\u7843 i s\u7917 a dictionary \u7903  tr\'ean, c\u7909  th\u7875 :\
+"title":"An article" chuy\uc0\u7875 n th\'e0nh "title":"Anh Minh \u273 \u7865 p trai"\
+"link":"http://www.example.com/third-article" chuy\uc0\u7875 n th\'e0nh "link":"http://google.com",\
+Sau \uc0\u273 \'f3 convert l\u7841 i dictionary \u7903  tr\'ean th\'e0nh NSString \u273 \u7875  chu\u7849 n b\u7883  g\u7917 i \u273 i.\
+Ch\'fa \'fd: \uc0\u272 \u7875  x\u7917  l\'fd b\'e0i 3 th\'ec c\u7847 n 1 b\u432 \u7899 c chuy\u7875 n NSDictionary th\'e0nh NSMutableDictionary, NSArray th\'e0nh NSMutableArray.\
+\
+B. S\uc0\u7917  d\u7909 ng UICollectionView \u273 \u7875  v\u7869  l\u7841 i b\'e0n c\u7901  vua 8x8.\
+\
+C. Cho 1 \uc0\u273 o\u7841 n string RSS \kerning1\expnd0\expndtw0 <Xem trong file B\'e0i t\uc0\u7853 p th\u7921 c h\'e0nh 2 - Data 2>\
+1. D\uc0\u7919  li\u7879 u tr\'ean l\'e0 sample data chat c\u7911 a 1 ng\u432 \u7901 i trong nhi\u7873 u group.\
+\expnd0\expndtw0\kerning0
+\{\
+        "id":"",\
+        "date":1407386139,\
+        "alias":"",\
+        "message":"Hi I have a question about your kitty spaceships?"\
+      \}\
+=> \uc0\u272 \'e2y l\'e0 d\u7919  li\u7879 u chat c\u7911 a b\u7841 n.\
+\
+      \{\
+        "id":"wc:chris+demo@snapengage.com",\
+        "date":1407386156,\
+        "alias":"Chris",\
+        "message":"Hi Mia! Great to see you again!"\
+      \}\
+\
+=> Alias != NULL => \uc0\u272 \'e2y l\'e0 d\u7919  li\u7879 u chat c\u7911 a ng\u432 \u7901 i chat v\u7899 i b\u7841 n,\
+\
+"description":"Hi I have a question about your kitty spaceships?",\
+=> \uc0\u272 \'e2y l\'e0 mi\'eau t\u7843  c\u7911 a 1 group.\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 1. Chuy\uc0\u7875 n d\u7919  li\u7879 u hi\u7875 n th\u7883  tr\'ean v\u7873  d\u7841 ng NSDictionary.\
+2. \expnd0\expndtw0\kerning0
+T\uc0\u7841 o \kerning1\expnd0\expndtw0 ra 2 m\'e0n h\'ecnh. \
+M\'e0n h\'ecnh 1 c\'f3 1 tableview, hi\uc0\u7875 n th\u7883  danh s\'e1ch group.\
+Khi click v\'e0o 1 row trong M\'e0n hinh 1, s\uc0\u7869  chuy\u7875 n sang m\'e0n h\'ecnh 2, hi\u7875 n th\u7883  danh s\'e1ch c\'e1c message trong group.\
+Ch\'fa \'fd message n\'e0o c\uc0\u7911 a b\u7841 n th\'ec hi\u7875 n th\u7883  b\'ean ph\u7843 i, message kh\'f4ng ph\u7843 i c\u7911 a b\u7841 n th\'ec hi\u7875 n th\u7883  b\'ean tr\'e1i.\expnd0\expndtw0\kerning0
+\
+\
+\
+}

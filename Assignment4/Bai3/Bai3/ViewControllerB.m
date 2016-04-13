@@ -37,13 +37,13 @@
 - (IBAction)clickB:(id)sender {
 //[self.view removeFromSuperview];
     
-    
+//    
 //    [self dismissViewControllerAnimated:YES completion:^{
 //        
 //    }];
     
 //    
-    [self.navigationController popViewControllerAnimated:YES];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 @end

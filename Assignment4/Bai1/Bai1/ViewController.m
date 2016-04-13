@@ -8,14 +8,15 @@
 
 #import "ViewController.h"
 #import "CustomCell.h"
-@interface ViewController ()
 
+@interface ViewController ()
+@property NSMutableArray *data;
 @end
 
 @implementation ViewController
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 40;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -29,19 +30,25 @@
         self.customCell = nil;
     }
     if(indexPath.row %2 ==0) {
-        self.tableView.rowHeight =100;
+        //self.tableView.rowHeight =100;
         cell.backgroundColor = [UIColor yellowColor];
+        cell.top.text = [self.data objectAtIndex:indexPath.row];
+        //cell.bot.text = [self.data objectAtIndex:indexPath.row];
+        
     } else {
-        self.tableView.rowHeight =50;
+        //self.tableView.rowHeight =50;
         cell.backgroundColor =[UIColor greenColor];
+        //cell.top.text = [self.data objectAtIndex:indexPath.row];
+        cell.bot.text = [self.data objectAtIndex:indexPath.row];
     }
-    cell.top.text = @"I am on top";
-    cell.bot.text = @"and I'm on the bottom";
+    
+    
     NSLog(@"%ld", indexPath.row);
     return cell;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.data = [NSMutableArray arrayWithObjects:@"1",@"2",@"3",@"4",@"4",@"4",@"5",@"6",@"8",@"9",@"10",@"11",@"1122",@"988",@"102",@"078",@"12",@"214",@"f",@"afr",@"34",@"34",@"err",@"4",@"5",@"6",@"8",@"9",@"10",@"11",@"1122",@"988",@"102",@"078",@"12",@"214",@"f",@"afr",@"34",@"34",@"err", nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)didReceiveMemoryWarning {

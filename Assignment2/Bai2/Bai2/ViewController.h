@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AlertViewController.h"
+@interface ViewController : UIViewController<AlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *ShowAlert;
+- (IBAction)clickedShowAlert:(id)sender;
 
-@interface ViewController : UIViewController
-
-
+@property AlertViewController *alertViewController;
 @end
 

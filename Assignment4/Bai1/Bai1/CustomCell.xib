@@ -7,26 +7,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
-                <outlet property="customCell" destination="Y4g-Ds-doV" id="I1u-SA-6aZ"/>
+                <outlet property="customCell" destination="Y4g-Ds-doV" id="MSO-mh-DHh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellIdentifier" id="Y4g-Ds-doV" customClass="CustomCell">
-            <rect key="frame" x="0.0" y="0.0" width="651" height="271"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellIdentifier" rowHeight="58" id="Y4g-Ds-doV" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="58"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y4g-Ds-doV" id="cYr-eP-jPw">
-                <rect key="frame" x="0.0" y="0.0" width="651" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="394" height="57"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YAr-WW-geb">
-                        <rect key="frame" x="32" y="8" width="194" height="49"/>
+                        <rect key="frame" x="8" y="8" width="194" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CY5-xH-ff9">
-                        <rect key="frame" x="178" y="36" width="222" height="45"/>
+                        <rect key="frame" x="190" y="8" width="222" height="45"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +39,7 @@
                 <outlet property="bot" destination="CY5-xH-ff9" id="Jtx-zt-D1W"/>
                 <outlet property="top" destination="YAr-WW-geb" id="gWG-NO-JOl"/>
             </connections>
-            <point key="canvasLocation" x="403.5" y="211.5"/>
+            <point key="canvasLocation" x="532" y="105"/>
         </tableViewCell>
     </objects>
 </document>

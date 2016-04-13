@@ -35,7 +35,7 @@
     self.viewControlerA= [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"A"];
 
     self.viewControlerB.title = @" ViewControlerB";
-     self.viewControlerA.title = @" ViewControlerA";
+    self.viewControlerA.title = @" ViewControlerA";
     
     UINavigationController *navigationA =[[UINavigationController alloc] initWithRootViewController:self.viewControlerA];
     
@@ -43,8 +43,8 @@
 
     
     NSArray *myTabBar= [[NSArray alloc] initWithObjects:
-                                  navigationA,
-                                  navigationB, nil];
+                                  self.viewControlerA,
+                                  self.viewControlerB, nil];
     self.tabBarControler.viewControllers = myTabBar;
     [self.window addSubview:self.tabBarControler.view];
     
