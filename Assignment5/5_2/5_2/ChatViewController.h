@@ -10,5 +10,6 @@
 
 @interface ChatViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+//@property (weak, nonatomic) IBOutlet UITableView *chatView;
 @property NSMutableDictionary *dictChat;
 @end
