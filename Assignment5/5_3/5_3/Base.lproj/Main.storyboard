@@ -20,23 +20,30 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="eo8-X1-JBG">
                                 <rect key="frame" x="101" y="370" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.2901960784" green="0.90588235289999997" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.9009698276" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gtb-MD-fWj">
-                                <rect key="frame" x="120" y="456" width="81" height="49"/>
+                                <rect key="frame" x="96" y="452" width="129" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.98266426610000002" green="1" blue="0.1593911066" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hung Ga">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="gtb-MD-fWj" id="UfV-hZ-60v"/>
                         <outlet property="imageView" destination="KSJ-8i-nAj" id="u7x-eB-x7Z"/>
                         <outlet property="slider" destination="eo8-X1-JBG" id="T8y-id-eTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="276"/>
+            <point key="canvasLocation" x="-215" y="76"/>
         </scene>
     </scenes>
 </document>

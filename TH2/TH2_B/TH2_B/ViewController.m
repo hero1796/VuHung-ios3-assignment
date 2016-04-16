@@ -30,6 +30,13 @@
     if (self.x == 17) {
         self.x =0;
     }
+    if (indexPath.row == 0) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(cell.frame.origin.x, cell.frame.origin.y,cell.frame.size.width, cell.frame.size.height)];
+
+        imageView.image = [UIImage imageNamed:@"White_Q_3.png" ];
+             
+        [cell addSubview:imageView];
+    }
     
         return cell;
 }

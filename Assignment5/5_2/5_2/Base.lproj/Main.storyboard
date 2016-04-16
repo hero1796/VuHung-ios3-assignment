@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="174"/>
+            <point key="canvasLocation" x="-237" y="148"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="d8V-Pd-Ym7">

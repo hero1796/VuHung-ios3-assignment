@@ -46,6 +46,24 @@
     chatViewController.dictChat =dict;
     [self.navigationController pushViewController:chatViewController animated:YES];
 }
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+          // access the view which you want to animate from it's tag
+   
+    
+        UILabel *myLable = [cell.contentView viewWithTag:3];
+    myLable.center = CGPointMake((cell.contentView.frame.origin.x+cell.contentView.frame.size.width
+                                /2) - 50,cell.contentView.frame.origin.y+ cell.contentView.frame.size.height/2);
+    [UIView animateWithDuration:1.5
+            delay:0
+            options:UIViewAnimationOptionCurveEaseInOut
+            animations:^{
+                myLable.center = CGPointMake(cell.contentView.frame.origin.x+cell.contentView.frame.size.width
+                                          /2,cell.contentView.frame.origin.y+ cell.contentView.frame.size.height/2);
+            } completion:^(BOOL finished){
+             //[self tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+              }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

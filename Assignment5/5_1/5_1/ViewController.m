@@ -39,7 +39,6 @@
     return 100;
 }
 
-
 - (IBAction)valueChanged2:(UISlider *)sender {
      NSLog(@"ok roi !");
 }
