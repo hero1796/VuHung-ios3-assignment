@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c9_clock_no_numbers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vSG-WJ-hdP">
+                                <rect key="frame" x="10" y="120" width="397" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="397" id="ezQ-4V-KE0"/>
+                                    <constraint firstAttribute="height" constant="400" id="szC-oI-veO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c9_clock_no_numbers_gio.png" translatesAutoresizingMaskIntoConstraints="NO" id="prC-oe-4EW">
+                                <rect key="frame" x="10" y="120" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="JRE-0W-Pwb"/>
+                                    <constraint firstAttribute="height" constant="400" id="aLn-bw-XxG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c9_clock_no_numbers_giay.png" translatesAutoresizingMaskIntoConstraints="NO" id="qx1-Ft-xtD">
+                                <rect key="frame" x="10" y="120" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="pJ0-WC-Yf4"/>
+                                    <constraint firstAttribute="width" constant="400" id="x0z-Fs-yTh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c9_clock_no_numbers_phut.png" translatesAutoresizingMaskIntoConstraints="NO" id="av4-d0-Gk0">
+                                <rect key="frame" x="10" y="120" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="nhL-pO-JMB"/>
+                                    <constraint firstAttribute="height" constant="400" id="uiZ-7z-tKN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qx1-Ft-xtD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="7WO-Yd-gPM"/>
+                            <constraint firstItem="vSG-WJ-hdP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="8o3-C7-afb"/>
+                            <constraint firstItem="qx1-Ft-xtD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Prr-BM-Ay0"/>
+                            <constraint firstItem="av4-d0-Gk0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="UAH-4z-mMr"/>
+                            <constraint firstItem="av4-d0-Gk0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="ZMu-st-LfH"/>
+                            <constraint firstItem="prC-oe-4EW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="dLY-ph-9mN"/>
+                            <constraint firstItem="prC-oe-4EW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="dqO-4e-p4Y"/>
+                            <constraint firstItem="vSG-WJ-hdP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="gbl-Bp-kZf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clock" destination="vSG-WJ-hdP" id="Tie-vJ-MJm"/>
+                        <outlet property="hours" destination="prC-oe-4EW" id="y0o-lZ-Rsv"/>
+                        <outlet property="minutes" destination="av4-d0-Gk0" id="4ON-kc-Y9F"/>
+                        <outlet property="secs" destination="qx1-Ft-xtD" id="yIZ-k3-9zL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="c9_clock_no_numbers.jpg" width="397" height="400"/>
+        <image name="c9_clock_no_numbers_giay.png" width="397" height="400"/>
+        <image name="c9_clock_no_numbers_gio.png" width="397" height="400"/>
+        <image name="c9_clock_no_numbers_phut.png" width="397" height="400"/>
+    </resources>
+</document>

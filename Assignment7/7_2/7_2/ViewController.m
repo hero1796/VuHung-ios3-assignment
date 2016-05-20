@@ -31,7 +31,7 @@
             self.lable.text = @"Vertical";
             break;
         case UIDeviceOrientationPortraitUpsideDown:
-             self.lable.text = @"Vertical";
+            self.lable.text = @"Vertical";
             break;
         case UIDeviceOrientationLandscapeLeft:
             self.lable.text = @"Horizontal";

@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww27120\viewh12600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 B\'e0i t\uc0\u7853 p:\
+=============== BU\uc0\u7892 I 1 =======================\
+M\uc0\u7909 c ti\'eau: objectiveC Class + OOP, Basic Controls, Protocol.\
+\
+1. Th\uc0\u7921 c h\'e0nh l\u7853 p tr\'ecnh OOP v\u7899 i b\'e0i to\'e1n qu\'e2n c\u7901 . <40mins>\
+Game:\
+- Player *whitePlayer\
+- Player *blackPlayer\
+- NSMutableArray *arrWhiteChess\
+- NSMutableArray *arrBlackChess\
+- init() => H\'e0m kh\uc0\u7903 i t\u7841 o 2 player v\'e0 32 qu\'e2n c\u7901 .\
+- checkKill() => H\'e0m in ra log "Prepare to check Kill"\
+- isGameOver() => H\'e0m in ra "Is Game Over"\
+\
+Player:\
+- NSString *name\
+- int numberOfTurn.\
+\
+Piece: (qu\'e2n c\uc0\u7901 )\
+- type: s\uc0\u7917  d\u7909 ng [#typedef enum] \u273 \u7875  quy \u273 \u7883 nh lo\u7841 i qu\'e2n (t\u7915  1->6)\
+- color: boolean: 0=white, 1=chess.\
+- x\
+- y\
+- isMoveValid(NSMutableArray *arrChess); => H\'e0m ki\uc0\u7875 m tra xem 1 l\u432 \u7907 t \u273 i c\'f3 \u273 \u432 \u7907 c \u273 i hay kh\'f4ng.\
+In ra log "Prepare to check Move"\
+\
+King: Qu\'e2n vua\
+- type\
+- isMoveValid(...) => vi\uc0\u7871 t h\'e0m ki\u7875 m tra n\u432 \u7899 c \u273 i c\u7911 a qu\'e2n Vua.\
+\
+T\uc0\u432 \u417 ng t\u7921  v\u7899 i c\'e1c class:\
+Queen, Knight, Bishop, Rook, Pawn\
+\
+2. Th\uc0\u7921 c h\'e0nh k\'e9o giao di\u7879 n qu\'e2n c\u7901 . (1h)\
+M\uc0\u7895 i \'f4 b\'e0n c\u7901  s\u7917  d\u7909 ng 1 Button \u273 \u7875  b\u7855 t s\u7921  ki\u7879 n. (s\u7869  c\'f3 8x8 \'f4 v\'e0 \u273 en tr\u7855 ng \u273 an xen nhau).\
+T\uc0\u7841 o mainstoryboard \u273 \u7875  k\'e9o v\u7883  tr\'ed qu\'e2n c\u7901  t\u7841 i th\u7901 i \u273 i\u7875 m b\u7855 t \u273 \u7847 u.\
+\uc0\u7842 nh qu\'e2n b\'e0i s\u7917  d\u7909 ng l\u7845 y tr\'ean Google.\
+\
+3 (*). Code logic c\uc0\u7911 a h\'e0m isMoveValid(...) khi  ch\u7885 n 1 qu\'e2n, s\u7869  show l\'ean c\'e1c \'f4 valid \u273 \u7875  di chuy\u7875 n.\
+(1h)\
+\
+=========================================================\
+\
+\
+\
+}
