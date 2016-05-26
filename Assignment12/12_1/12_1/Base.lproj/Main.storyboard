@@ -24,6 +24,13 @@
                                     <constraint firstAttribute="height" constant="200" id="pSJ-ut-XPk"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ9-P0-HVj">
+                                <rect key="frame" x="279" y="372" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.59971661259999998" green="0.27949470469999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -33,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="090-5q-JKZ" id="h5X-bj-LU2"/>
+                        <outlet property="lbl" destination="CJ9-P0-HVj" id="7jP-Ki-dRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lbl;
+@property NSInteger x;
 //@property NSMutableArray *global_stack;
 @property float rotation;
 @end
@@ -23,18 +25,26 @@
 //        NSLog(@"2");
 //    });
 
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        while (true) {
-//            [NSThread sleepForTimeInterval:1];
-//            NSInteger x = [_lbl.text intValue];
-//            x++;
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                _lbl.text = [NSString stringWithFormat:@"%ld", x];
-//            });
-//        }
-//    });
-
-
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        while (true) {
+            [NSThread sleepForTimeInterval:1];
+            
+           dispatch_async(dispatch_get_main_queue(), ^{
+                _x++;
+            NSLog(@"%ld",_x);
+                _lbl.text = [NSString stringWithFormat:@"%ld", _x];
+            
+            });
+           
+        }
+    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"aaaa");
+        NSLog(@"vvvvv");
+        NSLog(@"bbbbbb");
+        NSLog(@"sssssss");
+    });
+   
 //    int x =0;
 //    for(int i=0; i<1000000; i++) {
 //        for(int j=0; j<1000000; j++) {
